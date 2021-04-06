@@ -5,11 +5,12 @@ import porto2 from '../assets/img/porto2.png';
 import porto3 from '../assets/img/porto3.png';
 import porto4 from '../assets/img/porto4.png';
 import aboutme from '../assets/img/aboutme.png';
+import { URL_LOCALHOST } from '../helper/url';
 import { BiDownload } from 'react-icons/bi';
 import { AiOutlineMail } from 'react-icons/ai';
 import { FiLinkedin, FiGithub, FiInstagram } from 'react-icons/fi';
 
-function home() {
+const Home = () => {
     return (
         <>
             <Header/>
@@ -26,24 +27,48 @@ function home() {
             </div>
             <div className="showcase" id="portofolio">
                 <div className="showcase-1">
-                    <a href="http://localhost:3000/"><img src={porto1} alt="showcase"/></a>
+                    <a href={URL_LOCALHOST}><img src={porto1} alt="showcase"/></a>
+                    <div className="showcase-1-text">
+                        <div className="showcase-1-text-1">
+                            Marketing Website
+                        </div>
+                        <div className="showcase-1-text-2">
+                            Pellentesque senectus risus consectetur et sed purus sed.
+                        </div>
+                    </div>
                 </div>
                 <div className="showcase-2">
-                    <a href="http://localhost:3000/porto2"><img src={porto2} alt="showcase"/></a>
+                    <a href={`${URL_LOCALHOST}/porto2`}><img src={porto2} alt="showcase"/></a>
                     <div className="showcase-2-text">
                         <div className="showcase-2-text-1">
                             Marketing Website
                         </div>
                         <div className="showcase-2-text-2">
-                            Pallentesque senectus risus consectetur et sed purus sed.
+                            Pellentesque senectus risus consectetur et sed purus sed.
                         </div>
                     </div>
                 </div>
                 <div className="showcase-3">
-                    <a href="http://localhost:3000/"><img src={porto3} alt="showcase"/></a>
+                    <a href={URL_LOCALHOST}><img src={porto3} alt="showcase"/></a>
+                    <div className="showcase-3-text">
+                        <div className="showcase-3-text-1">
+                            Marketing Website
+                        </div>
+                        <div className="showcase-3-text-2">
+                            Pellentesque senectus risus consectetur et sed purus sed.
+                        </div>
+                    </div>
                 </div>
                 <div className="showcase-4">
-                    <a href="http://localhost:3000/"><img src={porto4} alt="showcase"/></a>
+                    <a href={URL_LOCALHOST}><img src={porto4} alt="showcase"/></a>
+                    <div className="showcase-4-text">
+                        <div className="showcase-4-text-1">
+                            Marketing Website
+                        </div>
+                        <div className="showcase-4-text-2">
+                            Pellentesque senectus risus consectetur et sed purus sed.
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="about" id="about">
@@ -60,7 +85,7 @@ function home() {
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, eum eos rerum saepe ipsa alias libero recusandae sunt nesciunt commodi ad sequi cupiditate nam, consequatur consequuntur beatae asperiores ea eaque ducimus quo sed aspernatur voluptatem deleniti! Provident necessitatibus assumenda itaque dignissimos doloribus totam hic consectetur iste tenetur! Temporibus, dignissimos ea.
                     </div>
                     <div className="about-bio-resume">
-                        <a href="http://localhost:3000/"><BiDownload /> Get full resume (pdf, 300kb)</a>
+                        <a href={URL_LOCALHOST}><BiDownload /> Get full resume (pdf, 300kb)</a>
                     </div>
                 </div>
             </div>
@@ -82,4 +107,4 @@ function home() {
     )
 }
 
-export default home;
+export default Home;

@@ -1,8 +1,8 @@
 .project-2 {
     width: 50%;
-    padding-left: 10%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-left: 10em;
+    padding-top: 5em;
+    padding-bottom: 5em;
     .project-2-back {
         padding-bottom: 3%;
         a {
@@ -26,17 +26,38 @@
 
 .project-2-footer {
     background: $color-light;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 7%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 3em;
+    text-align: center;
+    padding: 70px;
     img {
-        width: 90%;
-        height: 75%;
+        width: 100%;
+        height: 100%;
     }
-    .project-2-footer-1 {
-        padding-left: 5%;
-    }
-    .project-2-footer-2 {
-        padding-right: 5%;
-    }
+    // display: flex;
+    // text-align: center;
+    // padding-top: 6em;
+    // padding-bottom: 6em;
+    // .project-2-footer-1 {
+    //     width: 50%;
+    //     img {
+    //         width: 500px;
+    //         height: 300px;
+    //     }
+    // }
+    // .project-2-footer-2 {
+    //     width: 50%;
+    //     img {
+    //         width: 500px;
+    //         height: 300px;
+    //     }
+    // }
+    // .project-2-footer-1 {
+    //     padding-left: 5em;
+    // }
+    // .project-2-footer-2 {
+    //     padding-right: 5em;
+    // }
 }

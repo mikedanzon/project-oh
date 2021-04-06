@@ -1,7 +1,7 @@
 import { Route, Switch } from 'react-router-dom';
-import Home from './pages/Home';
 import './assets/styles/style.scss';
-import PortoTwo from './components/portotwo';
+import Home from './pages/Home';
+import PortoTwo from './pages/porto/PortoTwo';
 
 function App() {
   return (
