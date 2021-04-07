@@ -10,7 +10,40 @@ import { BiDownload } from 'react-icons/bi';
 import { AiOutlineMail } from 'react-icons/ai';
 import { FiLinkedin, FiGithub, FiInstagram } from 'react-icons/fi';
 
+const portofolio = [
+    {
+        img: porto1
+    },
+    {
+        img: porto2
+    },
+    {
+        img: porto3
+    },
+    {
+        img: porto4
+    }
+]
+
 const Home = () => {
+    const portoMap = () => {
+        return portofolio.map((val, i) => {
+            return (
+                <div className={`showcase-${i+1}`}>
+                    <a href={`${URL_LOCALHOST}/porto${i+1}`}><img src={val.img} alt="showcase"/></a>
+                    <div className={`showcase-${i+1}-text`}>
+                        <div className={`showcase-${i+1}-text-1`}>
+                            Marketing Website
+                        </div>
+                        <div className={`showcase-${i+1}-text-2`}>
+                            Pellentesque senectus risus consectetur et sed purus sed.
+                        </div>
+                    </div>
+                </div>
+            )
+        })
+    }
+
     return (
         <>
             <Header/>
@@ -26,7 +59,8 @@ const Home = () => {
                 </div>
             </div>
             <div className="showcase" id="portofolio">
-                <div className="showcase-1">
+                {portoMap()}
+                {/* <div className="showcase-1">
                     <a href={URL_LOCALHOST}><img src={porto1} alt="showcase"/></a>
                     <div className="showcase-1-text">
                         <div className="showcase-1-text-1">
@@ -69,7 +103,7 @@ const Home = () => {
                             Pellentesque senectus risus consectetur et sed purus sed.
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
             <div className="about" id="about">
                 <div className="about-text">
