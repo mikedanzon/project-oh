@@ -27,17 +27,28 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 2em;
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
     .showcase-1 {
         grid-row: 1;
         grid-column: 1;
         position: relative;
         .showcase-1-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            background-color: rgba(255, 250, 242, 0.9);
             position: absolute;
-            bottom: 5%;
-            left: 5%;
-            visibility: hidden;
+            padding: 20px;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             opacity: 0;
             transition: opacity .3s, visibility .3s;
+            visibility: hidden;
             .showcase-1-text-1 {
                 font-weight: bold;
                 font-size: $normal-font-size;
@@ -51,8 +62,6 @@
                 visibility: visible;
                 opacity: 1;
             }
-            background-color: rgba(255, 250, 242, 0.9);
-            opacity: 0.2;
         }
     }
     .showcase-2 {
@@ -60,12 +69,19 @@
         grid-column: 2;
         position: relative;
         .showcase-2-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            background-color: rgba(255, 250, 242, 0.9);
             position: absolute;
-            bottom: 5%;
-            left: 5%;
-            visibility: hidden;
+            padding: 20px;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             opacity: 0;
             transition: opacity .3s, visibility .3s;
+            visibility: hidden;
             .showcase-2-text-1 {
                 font-weight: bold;
                 font-size: $normal-font-size;
@@ -86,12 +102,19 @@
         grid-column: 1;
         position: relative;
         .showcase-3-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            background-color: rgba(255, 250, 242, 0.9);
             position: absolute;
-            bottom: 5%;
-            left: 5%;
-            visibility: hidden;
+            padding: 20px;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             opacity: 0;
             transition: opacity .3s, visibility .3s;
+            visibility: hidden;
             .showcase-3-text-1 {
                 font-weight: bold;
                 font-size: $normal-font-size;
@@ -112,12 +135,19 @@
         grid-column: 2;
         position: relative;
         .showcase-4-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            background-color: rgba(255, 250, 242, 0.9);
             position: absolute;
-            bottom: 5%;
-            left: 5%;
-            visibility: hidden;
+            padding: 20px;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             opacity: 0;
-            transition: opacity .5s, visibility .5s;
+            transition: opacity .3s, visibility .3s;
+            visibility: hidden;
             .showcase-4-text-1 {
                 font-weight: bold;
                 font-size: $normal-font-size;

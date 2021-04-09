@@ -30,7 +30,8 @@ const Home = () => {
         return portofolio.map((val, i) => {
             return (
                 <div className={`showcase-${i+1}`}>
-                    <a href={`${URL_LOCALHOST}/porto${i+1}`}><img src={val.img} alt="showcase"/></a>
+                    <a href={`${URL_LOCALHOST}/porto${i+1}`}>
+                    <img src={val.img} alt="showcase"/>
                     <div className={`showcase-${i+1}-text`}>
                         <div className={`showcase-${i+1}-text-1`}>
                             Marketing Website
@@ -39,6 +40,7 @@ const Home = () => {
                             Pellentesque senectus risus consectetur et sed purus sed.
                         </div>
                     </div>
+                    </a>
                 </div>
             )
         })
