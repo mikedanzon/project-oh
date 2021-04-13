@@ -1,1 +1,1 @@
-export const URL_LOCALHOST = 'http://localhost:3000';
+export const URL_LOCALHOST = '';
